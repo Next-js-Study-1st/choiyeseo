@@ -14,10 +14,21 @@ export default function csr() {
 
   if (!post) return <div>로딩중입니다.</div>
   return (
-    <div>
-      <h1>csr 페이지입니다</h1>.
-      <h2>{post.title}</h2>
-      <h2>{post.body}</h2>
+    <div style={{padding: "40px", fontFamily: "sans-serif"}}>
+      <h1>CSR 페이지입니다.</h1>
+
+      <div
+        style={{
+          marginTop: "20px",
+          padding: "20px",
+          border: "1px solid #ddd",
+          borderRadius: "8px",
+          maxWidth: "500px",
+        }}
+      >
+        <h2>{post.title}</h2>
+        <p>{post.body}</p>
+      </div>
     </div>
   );
 }
